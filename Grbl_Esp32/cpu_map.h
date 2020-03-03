@@ -62,6 +62,28 @@
 	#define LIMIT_MASK 0  // no limit pins		
 #endif
 
+
+#ifdef CPU_MAP_EGGBOT
+  
+  #define CPU_MAP_NAME "CPU_MAP_EGGBOT!"  
+  #define X_STEP_PIN        GPIO_NUM_2
+  #define X_DIRECTION_PIN    GPIO_NUM_15
+  #define Y_STEP_PIN        GPIO_NUM_18
+  #define Y_DIRECTION_PIN     GPIO_NUM_5
+  #define STEPPERS_DISABLE_PIN GPIO_NUM_4
+  #define USE_SERVO_AXES
+  #define SERVO_Z_PIN   GPIO_NUM_13
+  #define SERVO_Z_CHANNEL_NUM 3
+  #define SERVO_Z_RANGE_MIN 0
+  #define SERVO_Z_RANGE_MAX 15
+  #define LIMIT_MASK 0  // no limit pins    
+  #define DEFAULT_DIRECTION_INVERT_MASK 4 //invert z
+  #define DEFAULT_Z_MAX_TRAVEL 100.0 // This is percent in servo mode...used for calibration
+  #define DEFAULT_Z_STEPS_PER_MM 100.0 // This is percent in servo mode...used for calibration
+
+#endif
+
+
 #ifdef CPU_MAP_ESP32
 	// This is the CPU Map for the ESP32 Development Controller
 	// https://github.com/bdring/Grbl_ESP32_Development_Controller

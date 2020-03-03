@@ -44,7 +44,8 @@ Some features should not be changed. See notes below.
 // The CPU map is the main definition of the machine/controller you want to use
 // These are typically found in the cpu_map.h file.
 // See Github repo wiki for more details
-#define CPU_MAP_TEST_DRIVE // these are defined in cpu_map.h
+// #define CPU_MAP_TEST_DRIVE // these are defined in cpu_map.h
+#define CPU_MAP_EGGBOT
 
 // Number of axes defined (steppers, servos, etc) (valid range: 3 to 6)
 // Even if your machine only uses less than the minimum of 3, you should select 3
@@ -59,12 +60,12 @@ Some features should not be changed. See notes below.
 #define BAUD_RATE 115200
 
 //Connect to your local AP with these credentials
-//#define CONNECT_TO_SSID  "your SSID"
-//#define SSID_PASSWORD  "your SSID password"
+#define CONNECT_TO_SSID  "yesman"
+#define SSID_PASSWORD  "1qayxsw2"
 
 #define ENABLE_BLUETOOTH // enable bluetooth 
 
-#define ENABLE_SD_CARD // enable use of SD Card to run jobs
+//#define ENABLE_SD_CARD // enable use of SD Card to run jobs
 
 #define ENABLE_WIFI //enable wifi
 
@@ -279,7 +280,7 @@ Some features should not be changed. See notes below.
 // You should configure your settings in servo_pen.h
 // #define USE_SERVO_AXES  // the new method
 // define your servo pin here or in cpu_map.h
-//#define SERVO_PEN_PIN 					GPIO_NUM_27
+// #define SERVO_PEN_PIN 					GPIO_NUM_27
 
 // Enable using a solenoid for the Z axis on a pen type machine
 // #define USE_PEN_SOLENOID
