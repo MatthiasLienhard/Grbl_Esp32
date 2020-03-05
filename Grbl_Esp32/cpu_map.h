@@ -66,11 +66,11 @@
 #ifdef CPU_MAP_EGGBOT
   
   #define CPU_MAP_NAME "CPU_MAP_EGGBOT!"  
-  #define X_STEP_PIN        GPIO_NUM_2
-  #define X_DIRECTION_PIN    GPIO_NUM_15
-  #define Y_STEP_PIN        GPIO_NUM_18
-  #define Y_DIRECTION_PIN     GPIO_NUM_5
-  #define STEPPERS_DISABLE_PIN GPIO_NUM_4
+  #define X_STEP_PIN        GPIO_NUM_16
+  #define X_DIRECTION_PIN    GPIO_NUM_17
+  #define Y_STEP_PIN        GPIO_NUM_4
+  #define Y_DIRECTION_PIN     GPIO_NUM_15
+  #define STEPPERS_DISABLE_PIN GPIO_NUM_2
   #define USE_SERVO_AXES
   #define SERVO_Z_PIN   GPIO_NUM_13
   #define SERVO_Z_CHANNEL_NUM 3
@@ -80,6 +80,8 @@
   #define DEFAULT_DIRECTION_INVERT_MASK 4 //invert z
   #define DEFAULT_Z_MAX_TRAVEL 100.0 // This is percent in servo mode...used for calibration
   #define DEFAULT_Z_STEPS_PER_MM 100.0 // This is percent in servo mode...used for calibration
+  #define DEFAULT_X_STEPS_PER_MM 200/360
+  #define DEFAULT_Y_STEPS_PER_MM 200/360
 
 #endif
 

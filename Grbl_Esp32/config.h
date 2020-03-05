@@ -65,7 +65,7 @@ Some features should not be changed. See notes below.
 
 #define ENABLE_BLUETOOTH // enable bluetooth 
 
-//#define ENABLE_SD_CARD // enable use of SD Card to run jobs
+#define ENABLE_SD_CARD // enable use of SD Card to run jobs
 
 #define ENABLE_WIFI //enable wifi
 
